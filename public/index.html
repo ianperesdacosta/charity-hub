@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>London Charities</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
       .nav-pills .nav-link {
@@ -12,6 +12,12 @@
       .nav-pills .nav-link.active {
         background-color: #2d5016;
         color: white;
+      }
+
+      .label-category {
+        background-color: #E8F5E9;
+        color:#2d5016;
+        padding: 0.5rem;
       }
     </style>
   </head>
@@ -32,7 +38,7 @@
             <button class="nav-link" id="v-pills-disabled-tab-mobile" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Clothing</button>
             <button class="nav-link" id="v-pills-messages-tab-mobile" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Shower/Laundry</button>
             <button class="nav-link" id="v-pills-settings-tab-mobile" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Housing Advice</button>
-            <button class="nav-link" id="v-pills-settings-tab-mobile-2" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Recreation</button>
+            <button class="nav-link" id="v-pills-settings-tab-mobile-2" data-bs-toggle="pill" data-bs-target="#v-pills-recreation" type="button" role="tab" aria-controls="v-pills-recreation" aria-selected="false">Recreation</button>
             <button class="nav-link" id="v-pills-mental-health-tab-mobile" data-bs-toggle="pill" data-bs-target="#v-pills-mental-health" type="button" role="tab" aria-controls="v-pills-mental-health" aria-selected="false">Mental Health</button>
             <button class="nav-link" id="v-pills-storage-tab-mobile" data-bs-toggle="pill" data-bs-target="#v-pills-storage" type="button" role="tab" aria-controls="v-pills-storage" aria-selected="false">Storage</button>
           </div>
@@ -45,7 +51,7 @@
           <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Clothing</button>
           <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Shower/Laundry</button>
           <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Housing Advice</button>
-          <button class="nav-link" id="v-pills-settings-tab-2" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Recreation</button>
+          <button class="nav-link" id="v-pills-settings-tab-2" data-bs-toggle="pill" data-bs-target="#v-pills-recreation" type="button" role="tab" aria-controls="v-pills-recreation" aria-selected="false">Recreation</button>
           <button class="nav-link" id="v-pills-mental-health-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mental-health" type="button" role="tab" aria-controls="v-pills-mental-health" aria-selected="false">Mental Health</button>
           <button class="nav-link" id="v-pills-storage-tab" data-bs-toggle="pill" data-bs-target="#v-pills-storage" type="button" role="tab" aria-controls="v-pills-storage" aria-selected="false">Storage</button>
         </div>
@@ -58,11 +64,11 @@
                 <span>6-8 Webber Street, Waterloo, SE1 8QA</span>
                 <a href="tel:02079281677" class="ps-2" style="display: inline-block;">0207 928 1677</a>
                 <a href="mailto:wsenquiries@lcm.org.uk" class="ps-2" style="display: inline-block;">wsenquiries@lcm.org.uk</a>
-                <div  id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -74,10 +80,10 @@
                 <span>12 Melior St, Bermondsey, SE1 3QP</span>
                 <a href="tel:02073579363" class="ps-2" style="display: inline-block;">0207 357 9363</a>
                 <a href="mailto:mail@mannasociety.org.uk" class="ps-2" style="display: inline-block;">mail@mannasociety.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -88,9 +94,9 @@
               <p class="card-text">
                 <span>Multiple locations (Bermondsey, Peckham)</span>
                 <a href="tel:02077320505" class="ps-2" style="display: inline-block;">0207 732 0505</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
                 </div>
               </p>
             </div>
@@ -103,13 +109,13 @@
                 <a href="tel:02077202811" class="ps-2" style="display: inline-block;">0207 720 2811</a>
                 <a href="tel:02077200178" class="ps-2" style="display: inline-block;">0207 720 0178</a>
                 <a href="mailto:info@aceofclubs.org.uk" class="ps-2" style="display: inline-block;">info@aceofclubs.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
-                  <span class="badge rounded-pill text-bg-info">Recreation</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Recreation</span>
                 </div>
               </p>
             </div>
@@ -121,11 +127,11 @@
                 <span>St Vincent's Centre, Carlisle Place, SW1P 1NL</span>
                 <a href="tel:02075921850" class="ps-2" style="display: inline-block;">0207 592 1850</a>
                 <a href="mailto:reception@passage.org.uk" class="ps-2" style="display: inline-block;">reception@passage.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -138,11 +144,11 @@
                 <span>Multiple locations (Tooting, Norwood)</span>
                 <a href="tel:02086960943" class="ps-2" style="display: inline-block;">0208 696 0943</a>
                 <a href="mailto:info@spires.org.uk" class="ps-2" style="display: inline-block;">info@spires.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
                 </div>
               </p>
             </div>
@@ -157,11 +163,11 @@
                 <span>6-8 Webber Street, Waterloo, SE1 8QA</span>
                 <a href="tel:02079281677" class="ps-2" style="display: inline-block;">0207 928 1677</a>
                 <a href="mailto:wsenquiries@lcm.org.uk" class="ps-2" style="display: inline-block;">wsenquiries@lcm.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -172,9 +178,9 @@
               <p class="card-text">
                 <span>Multiple locations (Bermondsey, Peckham)</span>
                 <a href="tel:02077320505" class="ps-2" style="display: inline-block;">0207 732 0505</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
                 </div>
               </p>
             </div>
@@ -187,13 +193,13 @@
                 <a href="tel:02077202811" class="ps-2" style="display: inline-block;">0207 720 2811</a>
                 <a href="tel:02077200178" class="ps-2" style="display: inline-block;">0207 720 0178</a>
                 <a href="mailto:info@aceofclubs.org.uk" class="ps-2" style="display: inline-block;">info@aceofclubs.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
-                  <span class="badge rounded-pill text-bg-info">Recreation</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Recreation</span>
                 </div>
               </p>
             </div>
@@ -205,11 +211,11 @@
                 <span>St Vincent's Centre, Carlisle Place, SW1P 1NL</span>
                 <a href="tel:02075921850" class="ps-2" style="display: inline-block;">0207 592 1850</a>
                 <a href="mailto:reception@passage.org.uk" class="ps-2" style="display: inline-block;">reception@passage.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -222,11 +228,11 @@
                 <span>Multiple locations (Tooting, Norwood)</span>
                 <a href="tel:02086960943" class="ps-2" style="display: inline-block;">0208 696 0943</a>
                 <a href="mailto:info@spires.org.uk" class="ps-2" style="display: inline-block;">info@spires.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
                 </div>
               </p>
             </div>
@@ -242,11 +248,11 @@
                 <span>6-8 Webber Street, Waterloo, SE1 8QA</span>
                 <a href="tel:02079281677" class="ps-2" style="display: inline-block;">0207 928 1677</a>
                 <a href="mailto:wsenquiries@lcm.org.uk" class="ps-2" style="display: inline-block;">wsenquiries@lcm.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -258,10 +264,10 @@
                 <span>12 Melior St, Bermondsey, SE1 3QP</span>
                 <a href="tel:02073579363" class="ps-2" style="display: inline-block;">0207 357 9363</a>
                 <a href="mailto:mail@mannasociety.org.uk" class="ps-2" style="display: inline-block;">mail@mannasociety.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -274,13 +280,13 @@
                 <a href="tel:02077202811" class="ps-2" style="display: inline-block;">0207 720 2811</a>
                 <a href="tel:02077200178" class="ps-2" style="display: inline-block;">0207 720 0178</a>
                 <a href="mailto:info@aceofclubs.org.uk" class="ps-2" style="display: inline-block;">info@aceofclubs.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
-                  <span class="badge rounded-pill text-bg-info">Recreation</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Recreation</span>
                 </div>
               </p>
             </div>
@@ -293,11 +299,11 @@
                 <span>Multiple locations (Tooting, Norwood)</span>
                 <a href="tel:02086960943" class="ps-2" style="display: inline-block;">0208 696 0943</a>
                 <a href="mailto:info@spires.org.uk" class="ps-2" style="display: inline-block;">info@spires.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
                 </div>
               </p>
             </div>
@@ -313,11 +319,12 @@
                 <span>6-8 Webber Street, Waterloo, SE1 8QA</span>
                 <a href="tel:02079281677" class="ps-2" style="display: inline-block;">0207 928 1677</a>
                 <a href="mailto:wsenquiries@lcm.org.uk" class="ps-2" style="display: inline-block;">wsenquiries@lcm.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
                 </div>
               </p>
             </div>
@@ -329,10 +336,10 @@
                 <span>12 Melior St, Bermondsey, SE1 3QP</span>
                 <a href="tel:02073579363" class="ps-2" style="display: inline-block;">0207 357 9363</a>
                 <a href="mailto:mail@mannasociety.org.uk" class="ps-2" style="display: inline-block;">mail@mannasociety.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
                 </div>
               </p>
             </div>
@@ -345,13 +352,13 @@
                 <a href="tel:02077202811" class="ps-2" style="display: inline-block;">0207 720 2811</a>
                 <a href="tel:02077200178" class="ps-2" style="display: inline-block;">0207 720 0178</a>
                 <a href="mailto:info@aceofclubs.org.uk" class="ps-2" style="display: inline-block;">info@aceofclubs.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
-                  <span class="badge rounded-pill text-bg-info">Recreation</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Recreation</span>
                 </div>
               </p>
             </div>
@@ -363,18 +370,18 @@
                 <span>St Vincent's Centre, Carlisle Place, SW1P 1NL</span>
                 <a href="tel:02075921850" class="ps-2" style="display: inline-block;">0207 592 1850</a>
                 <a href="mailto:reception@passage.org.uk" class="ps-2" style="display: inline-block;">reception@passage.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Housing Advice</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
                 </div>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- HOUSING ADVICE & RECREATION TAB -->
+        <!-- HOUSING ADVICE TAB -->
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
           <div class="card">
             <div class="card-body">
@@ -384,12 +391,104 @@
                 <a href="tel:02077202811" class="ps-2" style="display: inline-block;">0207 720 2811</a>
                 <a href="tel:02077200178" class="ps-2" style="display: inline-block;">0207 720 0178</a>
                 <a href="mailto:info@aceofclubs.org.uk" class="ps-2" style="display: inline-block;">info@aceofclubs.org.uk</a>
-                <div id="related-categories">
+                <div>
                   <span>Other facilities here:</span>
-                  <span class="badge rounded-pill text-bg-info">Meals</span>
-                  <span class="badge rounded-pill text-bg-info">Healthcare</span>
-                  <span class="badge rounded-pill text-bg-info">Clothing</span>
-                  <span class="badge rounded-pill text-bg-info">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">The Passage</h5>
+              <p class="card-text">
+                <span>St Vincent's Centre, Carlisle Place, SW1P 1NL</span>
+                <a href="tel:02075921850" class="ps-2" style="display: inline-block;">0207 592 1850</a>
+                <a href="mailto:reception@passage.org.uk" class="ps-2" style="display: inline-block;">reception@passage.org.uk</a>
+                <div>
+                  <span>Other facilities here:</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Spires Rough Sleeper Space</h5>
+            <p class="card-text">
+              <span>Mon & Thu 9–10:30am (St Leonard's, SW16 1RB) / Tue & Fri 9am–12:30pm (St Luke's, SE27 0DT)</span>
+              <span>Multiple locations (Tooting, Norwood)</span>
+              <a href="tel:02086960943" class="ps-2" style="display: inline-block;">0208 696 0943</a>
+              <a href="mailto:info@spires.org.uk" class="ps-2" style="display: inline-block;">info@spires.org.uk</a>
+              <div>
+                <span>Other facilities here:</span>
+                <span class="badge rounded-pill label-category">Meals</span>
+                <span class="badge rounded-pill label-category">Healthcare</span>
+                <span class="badge rounded-pill label-category">Clothing</span>
+              </div>
+            </p>
+          </div>
+        </div>
+
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Crisis Skylight (London)</h5>
+              <p class="card-text">
+                <span>Mon–Fri 9:30am–4:30pm</span>
+                <span>66 Commercial St, London, E1 6LT</span>
+                <a href="tel:03006361967" class="ps-2" style="display: inline-block;">0300 636 1967</a>
+                <a href="mailto:london@crisis.org.uk" class="ps-2" style="display: inline-block;">london@crisis.org.uk</a>
+                <div>
+                <span>Other facilities here:</span>
+                <span class="badge rounded-pill label-category">Mental Health</span>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECREATION TAB -->
+        <div class="tab-pane fade" id="v-pills-recreation" role="tabpanel" aria-labelledby="v-pills-settings-tab-2" tabindex="0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ace of Clubs</h5>
+              <p class="card-text">
+                <span>St Alphonsus Road, SW4 7AS</span>
+                <a href="tel:02077202811" class="ps-2" style="display: inline-block;">0207 720 2811</a>
+                <a href="tel:02077200178" class="ps-2" style="display: inline-block;">0207 720 0178</a>
+                <a href="mailto:info@aceofclubs.org.uk" class="ps-2" style="display: inline-block;">info@aceofclubs.org.uk</a>
+                <div>
+                  <span>Other facilities here:</span>
+                  <span class="badge rounded-pill label-category">Meals</span>
+                  <span class="badge rounded-pill label-category">Healthcare</span>
+                  <span class="badge rounded-pill label-category">Clothing</span>
+                  <span class="badge rounded-pill label-category">Shower/Laundry</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Mosaic Clubhouse</h5>
+              <p class="card-text">
+                <span>65 Effra Road, Brixton, London SW2 1BZ</span>
+                <a href="tel:02079249657" class="ps-2" style="display: inline-block;">Tel: 020 7924 9657</a>
+                <a href="mailto:infohub@mosaic-clubhouse.org" class="ps-2" style="display: inline-block;">General enquiries: infohub@mosaic-clubhouse.org</a>
+                <span>Opening Hours</span>
+                <span>Clubhouse: Monday to Friday, 9am – 5pm</span>
+                <span>Evening Sanctuary: Seven days a week, 5pm – 11pm</span>
+                 <div>
+                  <span>Other facilities here:</span>
+                 <span class="badge rounded-pill label-category">Mental Health</span>
                 </div>
               </p>
             </div>
@@ -398,6 +497,39 @@
 
         <!-- MENTAL HEALTH TAB -->
         <div class="tab-pane fade" id="v-pills-mental-health" role="tabpanel" aria-labelledby="v-pills-mental-health-tab" tabindex="0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Crisis Skylight (London)</h5>
+              <p class="card-text">
+                <span>Mon–Fri 9:30am–4:30pm</span>
+                <span>66 Commercial St, London, E1 6LT</span>
+                <a href="tel:03006361967" class="ps-2" style="display: inline-block;">0300 636 1967</a>
+                <a href="mailto:london@crisis.org.uk" class="ps-2" style="display: inline-block;">london@crisis.org.uk</a>
+                <div>
+                  <span>Other facilities here:</span>
+                  <span class="badge rounded-pill label-category">Housing Advice</span>
+                </div>
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Mosaic Clubhouse</h5>
+              <p class="card-text">
+                <span>65 Effra Road, Brixton, London SW2 1BZ</span>
+                <a href="tel:02079249657" class="ps-2" style="display: inline-block;">Tel: 020 7924 9657</a>
+                <a href="mailto:infohub@mosaic-clubhouse.org" class="ps-2" style="display: inline-block;">General enquiries: infohub@mosaic-clubhouse.org</a>
+                <span>Opening Hours</span>
+                <span>Clubhouse: Monday to Friday, 9am – 5pm</span>
+                <span>Evening Sanctuary: Seven days a week, 5pm – 11pm</span>
+                <div>
+                  <span>Other facilities here:</span>
+                 <span class="badge rounded-pill label-category">Recreation</span>
+                </div>
+              </p>
+            </div>
+          </div>
         </div>
 
         <!-- STORAGE TAB -->
